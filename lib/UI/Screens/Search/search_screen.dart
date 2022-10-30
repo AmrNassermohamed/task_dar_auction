@@ -14,7 +14,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeScreenCubit()..getSearchCubit("phone"),
+      create: (context) => HomeScreenCubit()..getSearchCubit(),
       child: Scaffold(
         backgroundColor: ColorManager.wight,
         body: BlocBuilder<HomeScreenCubit, HomeScreenStates>(

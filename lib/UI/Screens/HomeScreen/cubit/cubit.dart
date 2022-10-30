@@ -29,7 +29,7 @@ static String searchName="";
     }
   }
 
-  getSearchCubit(name) async {
+  getSearchCubit() async {
     try {
       ProductModel productModel = await HomePageData.getSearchData(searchName);
       emit(SearchSuccess(productModel: productModel));
